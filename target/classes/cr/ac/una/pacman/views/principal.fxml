@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.pacman.controller.PrincipalController">
+   <children>
+      <BorderPane layoutX="32.0" layoutY="27.0" prefHeight="446.0" prefWidth="278.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="27.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnIniciar" buttonType="RAISED" onAction="#onBtnIniciar" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: CYAN;" text="START GAME" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnJugador" buttonType="RAISED" onAction="#onBtnJugador" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: ORANGE;" text="PLAYER" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnConfig" buttonType="RAISED" onAction="#onBtnConfig" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: PINK;" text="CONFIGURATION" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnRanking" buttonType="RAISED" layoutX="53.0" layoutY="173.0" onAction="#onBtnRanking" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: yellow;" text="RANKING" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSalir" buttonType="RAISED" onAction="#onBtnSalir" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: RED;" text="EXIT" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <ImageView fx:id="imgFooter" fitHeight="93.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <ImageView fx:id="imgHeader" fitHeight="193.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

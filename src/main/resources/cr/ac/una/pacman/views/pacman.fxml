@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import cr.ac.una.pacman.finalPacman.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.pacman.controller.pacmanController">
+   <children>
+      <BorderPane layoutX="128.0" layoutY="138.0" prefHeight="314.0" prefWidth="678.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <BorderPane prefHeight="35" style="-fx-background-color: #0B5091; -fx-padding: 10px, 5px, 10px, 5px">
+               <left>
+                  <Label fx:id="scoreLabel" style="-fx-font-size: 150%; -fx-text-fill: white" />
+               </left>
+               <center>
+                  <Label fx:id="gameOverLabel" style="-fx-font-size: 150%; -fx-text-fill: white" />
+               </center>
+               <right>
+                  <Label fx:id="levelLabel" style="-fx-font-size: 150%; -fx-text-fill: white" />
+               </right>
+            </BorderPane>
+         </top>
+         <center>
+            <PacManView fx:id="pacManView" columnCount="19" rowCount="21" />
+         </center>
+      </BorderPane>
+      <HBox alignment="CENTER" layoutX="175.0" layoutY="493.0" prefHeight="76.0" prefWidth="680.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <ImageView fx:id="imgv1" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgv2" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgv3" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgv4" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgv5" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgv6" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+         </children></HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="422.0" style="-fx-border-width: 5; -fx-border-color: white; -fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.pacman.controller.GameOverController">
+    <children>
+      <VBox layoutX="24.0" layoutY="254.0" prefHeight="43.0" prefWidth="364.0" spacing="20.0">
+         <children>
+            <Label fx:id="lblCurrentPoint" prefHeight="35.0" prefWidth="382.0" text="Puntos Totales:" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <StackPane alignment="CENTER" layoutX="235.0" layoutY="315.0" />
+      <JFXButton fx:id="btnFollow" layoutX="84.0" layoutY="315.0" onAction="#onBtnFollow" prefHeight="58.0" prefWidth="255.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Seguir Jugando: 0 pts">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAband" layoutX="84.0" layoutY="382.0" onAction="#onBtnAband" prefHeight="58.0" prefWidth="255.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Abandonar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imgOver" fitHeight="179.0" fitWidth="277.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

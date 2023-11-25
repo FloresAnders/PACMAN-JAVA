@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="478.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.pacman.controller.ScreenLoadController">
+    <children>
+      <ImageView fx:id="imgAnima" fitHeight="97.0" fitWidth="436.0" layoutX="20.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="22.0" />
+      <ProgressBar fx:id="prrBar" layoutX="43.0" layoutY="196.0" prefHeight="20.0" prefWidth="318.0" progress="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>
